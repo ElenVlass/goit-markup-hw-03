@@ -1,0 +1,299 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Roboto/roboto-v20-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/Roboto/roboto-v20-latin_cyrillic-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Roboto/roboto-v20-latin_cyrillic-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/Roboto/roboto-v20-latin_cyrillic-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../fonts/Roboto/roboto-v20-latin_cyrillic-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/Roboto/roboto-v20-latin_cyrillic-regular.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Roboto/roboto-v20-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/Roboto/roboto-v20-latin_cyrillic-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Roboto/roboto-v20-latin_cyrillic-500.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/Roboto/roboto-v20-latin_cyrillic-500.woff") format("woff"),
+    /* Modern Browsers */
+      url("../fonts/Roboto/roboto-v20-latin_cyrillic-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/Roboto/roboto-v20-latin_cyrillic-500.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Roboto/roboto-v20-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/Roboto/roboto-v20-latin_cyrillic-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Roboto/roboto-v20-latin_cyrillic-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/Roboto/roboto-v20-latin_cyrillic-700.woff") format("woff"),
+    /* Modern Browsers */
+      url("../fonts/Roboto/roboto-v20-latin_cyrillic-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/Roboto/roboto-v20-latin_cyrillic-700.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+/* roboto-900 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Roboto/roboto-v20-latin_cyrillic-900.eot"); /* IE9 Compat Modes */
+  src: local("Roboto Black"), local("Roboto-Black"),
+    url("../fonts/Roboto/roboto-v20-latin_cyrillic-900.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Roboto/roboto-v20-latin_cyrillic-900.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/Roboto/roboto-v20-latin_cyrillic-900.woff") format("woff"),
+    /* Modern Browsers */
+      url("../fonts/Roboto/roboto-v20-latin_cyrillic-900.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/Roboto/roboto-v20-latin_cyrillic-900.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+/* преимущества и занятия background: #e5e5e5; */
+/*команда background: #f5f4fa;*/
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --dark-bgd-color: #2f303a;
+  --hero-title-color: #ffffff;
+  --contacts-text-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  color: var(--title-text-color);
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+.logo.link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  display: block;
+  padding-top: 60px;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link,
+.aut-nav .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.aut-nav .link:hover,
+.aut-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.aut-nav .link {
+  color: var(--primary-text-color);
+}
+.hero-title {
+  color: var(--hero-title-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
+}
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section-title.hero-title {
+  text-transform: uppercase;
+}
+
+.section-title.work,
+.team .section-title {
+  font-size: 36px;
+  line-height: 1.17;
+}
+.team .title,
+.works .title {
+  color: var(--title-text-color);
+}
+.team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.button,
+.filter-button {
+  color: var(--title-text-color);
+}
+.button.hero {
+  color: #ffffff;
+  font-family: inherit;
+  background-color: var(--accent-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.button.hero {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+.dark-bg {
+  background: var(--dark-bgd-color);
+}
+.logo-studio {
+  color: var(--hero-title-color);
+}
+
+address {
+  font-style: normal;
+}
+.address,
+.contacts {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.contacts {
+  display: block;
+  color: var(--contacts-text-color);
+  margin-top: 9px;
+}
+.list-contacts:last-child {
+  padding-bottom: 60px;
+}
+.address {
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--hero-title-color);
+  background: var(--accent-color);
+}
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.works .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.works p {
+  font-size: 16px;
+  line-height: 1.87;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+.hero {
+  text-align: center;
+}
+.list-item:first-child {
+  margin-top: 94px;
+}
+.qualities-item {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.section-title.work {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.pictures:not(:last-child) {
+  padding-right: 30px;
+}
+.section-title.team {
+  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.team .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.position {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+.list.team {
+  padding-bottom: 94px;
+}
