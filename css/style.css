@@ -87,7 +87,7 @@
   --hero-title-color: #ffffff;
   --contacts-text-color: rgba(255, 255, 255, 0.6);
   --team-bg-color: #f5f4fa;
-  --work-bg-color: #e5e5e5;
+  --filter-bg-color:#F5F4FA;
 }
 
 html {
@@ -105,7 +105,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  background-color: var(--work-bg-color);
 }
 h1,
 h2,
@@ -121,9 +120,7 @@ img {
 address {
   font-style: normal;
 }
-header {
-  background-color: var(--hero-title-color);
-} 
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -218,7 +215,7 @@ header {
   text-align: center;
 }
 .team .title,
-.works .title {
+.works-title {
   color: var(--title-text-color);
 }
 .team .title {
@@ -229,6 +226,8 @@ header {
 .button,
 .filter-button {
   color: var(--title-text-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 .button.hero {
   color: #ffffff;
@@ -292,16 +291,25 @@ header {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  background-color: var(--filter-bg-color);
+  padding: 6px 22px;
+
 }
-.works .title {
+.works-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-bottom: 0;
 }
-.works p {
+.explanation {
   font-size: 16px;
   line-height: 1.87;
+  margin-top: 4px;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
 
 .hero {
@@ -385,4 +393,23 @@ header {
 .footer-container {
   padding-left: 215px;
   padding-top: 60px;
+}
+.filter-container {
+  padding-left:  280px;
+  margin-top: 94px;
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+}
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 4px;
+    margin-top: -30px;
+  margin-left: -30px;
+}
+.works-item {
+  margin-top: 30px;
+  margin-left: 30px;
+border: 1px solid #EEEEEE;
+flex-basis: calc(100% / 3 - 30px);
 }
