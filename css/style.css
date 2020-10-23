@@ -86,6 +86,8 @@
   --dark-bgd-color: #2f303a;
   --hero-title-color: #ffffff;
   --contacts-text-color: rgba(255, 255, 255, 0.6);
+  --team-bg-color: #f5f4fa;
+  --work-bg-color: #e5e5e5;
 }
 
 html {
@@ -97,15 +99,13 @@ html {
   box-sizing: inherit;
 }
 
-/* преимущества и занятия background: #e5e5e5; */
-/*команда background: #f5f4fa;*/
-
 body {
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  background-color: var(--work-bg-color);
 }
 h1,
 h2,
@@ -121,7 +121,9 @@ img {
 address {
   font-style: normal;
 }
-
+header {
+  background-color: var(--hero-title-color);
+} 
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -202,17 +204,18 @@ address {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-top: 0;
+  margin-top: 94px;
   margin-bottom: 0;
 }
-.section-title.hero-title {
+.section-title.qualities {
   text-transform: uppercase;
 }
 
 .section-title.work,
-.team .section-title {
+.team.section-title {
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
 .team .title,
 .works .title {
@@ -255,7 +258,11 @@ address {
 .logo-studio {
   color: var(--hero-title-color);
 }
+.section.team {
+  background-color: var(--team-bg-color);
+}
 
+}
 .address,
 .contacts {
   font-size: 14px;
@@ -300,9 +307,7 @@ address {
 .hero {
   text-align: center;
 }
-.list-item:first-child {
-  margin-top: 94px;
-}
+
 .qualities-item {
   margin-top: 10px;
   margin-bottom: 0;
@@ -312,8 +317,12 @@ address {
   margin-bottom: 50px;
   text-align: center;
 }
-.pictures:not(:last-child) {
-  padding-right: 30px;
+.pictures {
+  flex-basis: calc(100% / 3 - 30px);
+  align-items: stretch;
+}
+.pictures:not(:first-child) {
+  padding-left: 30px;
 }
 .section-title.team {
   margin-top: 94px;
@@ -323,14 +332,19 @@ address {
 .team .title {
   margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
 }
 .position {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 30px;
+  text-align: center;
 }
 .list.team {
   padding-bottom: 94px;
+  display: flex;
+  margin-right: -30px;
+  flex-wrap: wrap;
 }
 .filter li {
   display: inline-block;
@@ -344,4 +358,31 @@ address {
 }
 .menu {
   display: inline-flex;
+}
+.qualities-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+.list-item {
+  flex-basis: calc(100% / 4 - 30px);
+}
+.img-container {
+  display: inline-flex;
+}
+.pictures {
+  flex-basis: auto;
+}
+.person-item {
+  margin-right: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.footer-container {
+  padding-left: 215px;
+  padding-top: 60px;
 }
